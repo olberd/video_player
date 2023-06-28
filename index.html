@@ -7,16 +7,18 @@
 </head>
 <body>
   <div id="player" style="width: 800px; height: 600px;">
-    <div class="js-video-container" style="width: 100%; height: 100%">
+    <div
+      class="js-video-container" style="width: 100%; height: 100%">
     </div>
-    <!-- Here can be placed player controls: play and volume buttons -->
-    <div style="width: 100%; background:black;" >
-      <button class="fa fa-play" aria-hidden="true" style="border-style: none; cursor: pointer; color:white;
-        text-align: left; background-color: transparent" ></button>
-      <button class="fa fa-pause" aria-hidden="true" style="border-style: none; cursor: pointer; color:white;
-        text-align: left; background-color: transparent " ></button>
-    </div>
-
+      <div style="width: 100%; background:black;">
+        <div>
+          <button class="js-play-button" style="border-style: none; cursor: pointer; color: white; background-color: transparent" ><i class="fa fa-play fa-fw" aria-hidden="false"></i></button>
+          <button class="js-pause-button" style="border-style: none; cursor: pointer; color: white; background-color: transparent" hidden><i class="fa fa-pause fa-fw" aria-hidden="true"></i></button>
+          <button class="js-volume-button">Volume</button>
+          <button class="js-mute-button" hidden>Mute</button>
+          <button class="js-fullscreen-button">Fullscreen</button>
+        </div>
+      </div>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
